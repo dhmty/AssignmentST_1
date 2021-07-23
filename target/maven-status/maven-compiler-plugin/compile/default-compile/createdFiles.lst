@@ -4,6 +4,7 @@ MIP\importExcel.class
 MIP\importExcel$1.class
 MIP\shortShift.class
 MIP\exportExcel.class
+MIP\assignmentMIP.class
 MIP\dsShortShift.class
 MIP\dsJob.class
 MIP\main.class

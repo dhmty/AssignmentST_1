@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package MIP;
 
 import com.google.ortools.Loader;
@@ -62,7 +57,7 @@ public class assignmentMIP {
         // tạo Constraints : rằng buộc bài toán
 
         for (int j = 0; j < numCV; ++j) {
-          MPConstraint  constraint = solver.makeConstraint(1,ts_CV[j], ""); 
+          MPConstraint  constraint = solver.makeConstraint(ts_CV[j],ts_CV[j], "");
           for (int i = 0; i < numNV; ++i) {
             constraint.setCoefficient(x[i][j], 1);
           }
